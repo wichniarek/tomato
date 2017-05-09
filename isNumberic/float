@@ -1,0 +1,15 @@
+        protected bool isNumberic(string message, out float result)
+        {
+            //判断是否为float字符串
+            //是的话则将其转换为数字并将其设为out类型的输出值、返回true, 否则为false
+            result = -1;   //result 定义为out 用来输出值
+            try
+            {
+                result = Convert.ToSingle(message);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
